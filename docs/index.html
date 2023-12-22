@@ -1,0 +1,182 @@
+<html>
+  <head>
+    <title>AffordanceLLM: Grounding Affordance from Vision Language Models</title>
+    <meta property="og:title" content="AffordanceLLM: Grounding Affordance from Vision Language Models"/>
+    <meta property="og:image" content="teaser.png"/>
+    <meta property="og:description" content="Shengyi Qian, Weifeng Chen, Min Bai, Xiong Zhou, Li Erran Li, Zhuowen Tu." />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- webpage template-->
+    <link rel="stylesheet" href="website.css">  
+  </head>
+  <body>
+    <br>
+    <center>
+      <span style="font-size:32px">AffordanceLLM: Grounding Affordance from Vision Language Models</span>
+    </center>
+    <br><br>
+    <table align=center width=900px>
+      <tr>
+        <td align=center width=100px>
+          <center>
+            <span style="font-size:20px"><a href="https://jasonqsy.github.io/">Shengyi Qian</a></span>
+          </center>
+        </td>
+        <td align=center width=100px>
+          <center>
+            <span style="font-size:20px"><a href="https://websites.umich.edu/~wfchen/">Weifeng Chen</a></span>
+          </center>
+        </td>
+        <td align=center width=100px>
+          <center>
+            <span style="font-size:20px"><a href="https://www.cs.toronto.edu/~mbai/">Min Bai</a></span>
+          </center>
+        </td>
+        <td align=center width=100px>
+          <center>
+            <span style="font-size:20px"><a href="https://scholar.google.com/citations?user=MqZPM6AAAAAJ&hl=en">Xiong Zhou</a></span>
+          </center>
+        </td>
+        <td align=center width=100px>
+          <center>
+            <span style="font-size:20px"><a href="https://www.cs.columbia.edu/~lierranli/">Li Erran Li</a></span>
+          </center>
+        </td>
+        <td align=center width=100px>
+          <center>
+            <span style="font-size:20px"><a href="https://pages.ucsd.edu/~ztu/">Zhuowen Tu</a></span>
+          </center>
+        </td>
+      </tr>
+    </table>
+    <br>
+    <table align=center width=700px>
+      <tr>
+        <td align=center width=200px>
+          <center>
+            <span style="font-size:20px">Amazon</span>
+          </center>
+        </td>
+      </tr>
+    </table>
+    <br>
+    <table align=center width=700px>
+      <tr>
+        <td align=center width=100px>
+          <center>
+            <span style="font-size:20px">arXiv 2023</span>
+          </center>
+        </td>
+      </tr>
+    </table>
+    <br>
+    <table align=center width=500px>
+      <tr>
+        <td align=center width=100px>
+          <center>
+            <span style="font-size:20px"><a href="#">[pdf]</a></span>
+          </center>
+        </td>
+        <!-- <td align=center width=100px>
+          <center>
+            <span style="font-size:20px"><a href="https://github.com/JasonQSY/AffordanceLLM">[code]</a></span>
+          </center>
+        </td>
+        <td align=center width=100px>
+          <center>
+            <span style="font-size:20px"><a href="https://www.youtube.com/watch?v=YDIL93XxHyk">[video]</a></span>
+          </center>
+        </td> -->
+      </tr>
+    </table>
+    <table align=center width=700px>
+      <tr>
+        <td align=center width=100px>
+          <center>
+            <span style="font-size:20px"></span>
+          </center>
+        </td>
+      </tr>
+    </table>
+    <br>
+    <table align=center width=900px>
+      <tr>
+        <td width=00px>
+          <center>
+            <img src = "teaser.png" width="900px"></img><br>
+          </center>
+        </td>
+      </tr>
+      <td width=600px>
+     
+          <span style="font-size:14px"><i>The input is a single image and the corresponding action (e.g, ``hold''). The output is a heatmap which highlights regions one can interact. 
+            We aim to enhance the generalization capability of affordance grounding to in-the-wild objects that are unseen during training, by developing a new approach, AffordanceLLM, that takes the advantage of the rich knowledge from large-scale vision language models beyond the supervision from the training images.</i>
+
+      </td>
+      </tr>
+    </table>
+    <br>
+    Affordance grounding refers to the task of finding the area of an object with which one can interact. It is a fundamental but challenging task, as a successful solution requires the comprehensive understanding of a scene in multiple aspects including detection, localization, and recognition of objects with their parts, of geo-spatial configuration/layout of the scene, of 3D shapes and physics, as well as of the functionality and potential interaction of the objects and humans. 
+    Much of the knowledge is hidden and beyond the image content with the supervised labels from a limited training set. 
+    In this paper, we make an attempt to improve the generalization capability of the current affordance grounding by taking the advantage of the rich world, abstract, and human-object-interaction knowledge from pretrained large-scale vision language models. 
+    Under the AGD20K benchmark, our proposed model demonstrates a significant performance gain over the competing methods for in-the-wild object affordance grounding. 
+    We further demonstrate it can ground affordance for objects from random Internet images, even if both objects and actions are unseen during training.
+    <br><br>
+    <hr>
+    <table align=center width=900px>
+      <tr>
+        <td>
+          <left>
+            <center>
+              <h1>Approach</h1>
+            </center>
+          </left>
+        </td>
+      </tr>
+      <tr>
+        <td width=00px>
+          <center>
+            <img src = "approach.png" width="900px"></img><br>
+          </center>
+        </td>
+      </tr>
+      <td width=600px>
+     
+          <span style="font-size:14px"><i>The input is a single image and the corresponding action (e.g, ``hold''). The output is a heatmap which highlights regions one can interact. 
+            We aim to enhance the generalization capability of affordance grounding to in-the-wild objects that are unseen during training, by developing a new approach, AffordanceLLM, that takes the advantage of the rich knowledge from large-scale vision language models beyond the supervision from the training images.</i>
+
+      </td>
+      </tr>
+    </table>
+    <br><br>
+    <hr>
+    <table align=center width=1100px>
+      <tr>
+        <td>
+          <left>
+            <center>
+              <h1>Results</h1>
+            </center>
+          </left>
+        </td>
+      </tr>
+    </table>
+    <center>
+      <img src = "results.png" width="900px"></img><br>
+    </center>
+    <br><br>
+    <hr>
+    <table align=center width=1100px>
+      <tr>
+        <td>
+          <left>
+            <center>
+              <h1>Acknowledgements</h1>
+            </center>
+            Ack
+          </left>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
